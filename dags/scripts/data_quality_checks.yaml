@@ -1,0 +1,23 @@
+company_profiles_google_maps: 
+  - google_id
+  - name
+  - place_id
+  - city
+  - state
+customer_reviews_google: 
+  - google_id
+  - review_id
+  - name
+  - place_id
+fmcsa_companies: 
+  - usdot_num
+  - company_name
+fmcsa_company_snapshot: 
+  - usdot_num
+  - company_name
+fmcsa_complaints: 
+  - usdot_num
+  - id
+fmcsa_safer_data: 
+  - usdot_num
+  - legal_name

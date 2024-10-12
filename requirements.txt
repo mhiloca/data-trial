@@ -1,12 +1,11 @@
 apache-airflow-providers-apache-kafka
-kafka-python
-pyspark
-pyhive
 psycopg2-binary
-celery
 redis
 requests
 pandas
+numpy==1.26.4
 pyarrow
-fastparquet
-great_expectations
+great_expectations==0.16.16
+cython
+pybind11
+black
