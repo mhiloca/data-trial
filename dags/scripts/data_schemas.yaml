@@ -1,0 +1,92 @@
+company_profiles_google_maps:
+  columns:
+    - google_id
+    - name
+    - place_id
+    - site
+    - subtypes
+    - type
+    - category
+    - phone
+    - full_address
+    - borough
+    - street
+    - postal_code
+    - city
+    - state
+    - country_code
+    - rating
+    - reviews_id
+    - reviews
+  column_not_null:
+    - category
+  columns_fill_na:
+    rating: 0
+    reviews_id: 0
+    reviews: 0
+customer_reviews_google:
+  columns:
+    - google_id
+    - review_id
+    - place_id
+    - reviews
+    - rating
+    - review_rating
+    - review_datetime_utc
+fmcsa_companies:
+  columns:
+    - usdot_num
+    - company_name
+    - company_url
+    - city
+    - state
+    - total_complaints_2021
+    - total_complaints_2022
+    - total_complaints_2023
+    - location
+    - company_type
+fmcsa_company_snapshot:
+  columns:
+    - usdot_num
+    - company_name
+    - registered_address
+    - phone_number
+    - mailing_address
+    - safety_review_date
+    - num_of_trucks
+    - num_of_tractors
+    - num_of_trailers
+    - total_complaints_2021
+    - total_complaints_2022
+    - total_complaints_2023
+fmcsa_complaints:
+  columns:
+    - usdot_num
+    - id
+    - complaint_category
+    - complaint_year
+    - complaint_count
+fmcsa_safer_data:
+  columns:
+    - usdot_num
+    - entity_type
+    - operating_status
+    - legal_name
+    - physical_address
+    - phone
+    - drivers
+    - operation_classification
+    - carrier_type
+    - cargo_types
+    - us_vehicle_inspections
+    - us_driver_inspections
+    - us_vehicle_out_of_service
+    - us_driver_out_of_service
+    - us_crashes_fatal
+    - us_crashes_injury
+    - carrier_safety_rating_rating_date
+    - carrier_safety_rating_review_date
+    - carrier_safety_rating_rating
+    - carrier_safety_rating_type
+    - mileage
+    - mileage_year
