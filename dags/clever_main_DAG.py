@@ -4,6 +4,7 @@ from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from scripts.clever_main_pipeline import validate_data, upload_to_postgres
 
+
 default_args = {
     "owner": "alec.ventura",
     "start_date": datetime(2024, 10, 1),

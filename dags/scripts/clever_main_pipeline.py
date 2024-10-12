@@ -61,7 +61,7 @@ def upload_to_postgres(**kwargs):
     logger.info(f"Schema for {table_name}: {schema}")
 
     columns = schema["columns"]
-    logger.info(f"Columns to be uploaded tp Postgres: {columns}")
+    logger.info(f"Columns to be uploaded to Postgres: {columns}")
 
     column_not_null = schema.get("column_not_null")
     columns_fill_na = schema.get("columns_fill_na")
@@ -86,4 +86,4 @@ def upload_to_postgres(**kwargs):
         logger.info("No columns to fill null values")
 
     upload_overwrite_table(raw_df, table_name)
-    logger.info(f"Uploaded {raw_df.shape[0]} to Postgres")
+    logger.info(f"Uploaded {raw_df.shape[0]} rows to Postgres")
