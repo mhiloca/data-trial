@@ -47,7 +47,7 @@ def validate_data(**kwargs):
         if results.success:
             logger.info("Validation passed!")
         else:
-            logger.warning("Validation failed")
+            raise Exception("Validation failed, please check dataset before trying to load them into Postgres")
 
 
 def upload_to_postgres(**kwargs):
