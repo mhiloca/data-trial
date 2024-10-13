@@ -8,9 +8,9 @@ from scripts.postgres_helper import upload_overwrite_table
 
 PROJECT_DIR = os.getcwd()
 DAGS_SCRIPTS_DIR = os.path.abspath(os.path.dirname(__file__))
-RAW_DATA_DIR = os.path.join(DAGS_SCRIPTS_DIR, "data_examples")
-SCHEMAS_PATH = os.path.join(DAGS_SCRIPTS_DIR, "data_schemas.yaml")
-DATA_QUALITY_PATH = os.path.join(DAGS_SCRIPTS_DIR, "data_quality_checks.yaml")
+RAW_DATA_DIR = os.path.join(DAGS_SCRIPTS_DIR,"data_examples")
+SCHEMAS_PATH = os.path.join(DAGS_SCRIPTS_DIR, "config", "data_schemas.yaml")
+DATA_QUALITY_PATH = os.path.join(DAGS_SCRIPTS_DIR, "config","data_quality_checks.yaml")
 
 
 logger = logging.getLogger("CLEVER MAIN")
