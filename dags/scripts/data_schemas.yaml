@@ -18,8 +18,7 @@ company_profiles_google_maps:
     - rating
     - reviews_id
     - reviews
-  column_not_null:
-    - category
+  column_not_null: category
   columns_fill_na:
     rating: 0
     reviews_id: 0
